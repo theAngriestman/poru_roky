@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="poru_roky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ly-bH-ZWt">
+                                <rect key="frame" x="70" y="224" width="274" height="74"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Континент" buttonSize="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="openGate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Coe-ah-drm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uuv-zs-F1H">
+                                <rect key="frame" x="70" y="306" width="274" height="74"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Вышка" cornerStyle="small" buttonSize="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="openGate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tdc-bG-LX3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6b4-9i-Mtm">
+                                <rect key="frame" x="70" y="142" width="274" height="74"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Епам" buttonSize="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="openGate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="do2-gE-Vjl"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mpr-U5-IdK">
+                                <rect key="frame" x="20" y="388" width="374" height="379"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ly-bH-ZWt" secondAttribute="trailing" constant="70" id="26I-Pp-hua"/>
+                            <constraint firstItem="4ly-bH-ZWt" firstAttribute="width" secondItem="6b4-9i-Mtm" secondAttribute="width" id="CsN-6q-ZjN"/>
+                            <constraint firstItem="Mpr-U5-IdK" firstAttribute="top" secondItem="Uuv-zs-F1H" secondAttribute="bottom" constant="8" id="Hcy-Hr-QMR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uuv-zs-F1H" secondAttribute="trailing" constant="70" id="OFm-ay-VMD"/>
+                            <constraint firstItem="6b4-9i-Mtm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="98" id="ShG-27-ddq"/>
+                            <constraint firstItem="4ly-bH-ZWt" firstAttribute="height" secondItem="6b4-9i-Mtm" secondAttribute="height" id="TlW-Rx-u3d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6b4-9i-Mtm" secondAttribute="trailing" constant="70" id="UDf-MS-mMa"/>
+                            <constraint firstItem="4ly-bH-ZWt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="j84-cB-ZOh"/>
+                            <constraint firstItem="Uuv-zs-F1H" firstAttribute="top" secondItem="4ly-bH-ZWt" secondAttribute="bottom" constant="8" symbolic="YES" id="jZx-oi-LIh"/>
+                            <constraint firstItem="Uuv-zs-F1H" firstAttribute="height" secondItem="6b4-9i-Mtm" secondAttribute="height" id="r16-2z-ev7"/>
+                            <constraint firstItem="4ly-bH-ZWt" firstAttribute="top" secondItem="6b4-9i-Mtm" secondAttribute="bottom" constant="8" symbolic="YES" id="rzL-6I-DqH"/>
+                            <constraint firstItem="Uuv-zs-F1H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="uAv-Wp-HW4"/>
+                            <constraint firstItem="Mpr-U5-IdK" firstAttribute="centerX" secondItem="Uuv-zs-F1H" secondAttribute="centerX" id="uc0-JL-NFS"/>
+                            <constraint firstItem="6b4-9i-Mtm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="vEW-mb-gYa"/>
+                            <constraint firstItem="Mpr-U5-IdK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wxR-Dd-ikJ"/>
+                            <constraint firstItem="Uuv-zs-F1H" firstAttribute="width" secondItem="6b4-9i-Mtm" secondAttribute="width" id="xeq-Ld-wFY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mpr-U5-IdK" secondAttribute="bottom" constant="95" id="yfu-1m-AxD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textArea" destination="Mpr-U5-IdK" id="Vs0-GK-iTT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-59.420289855072468" y="-47.544642857142854"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
